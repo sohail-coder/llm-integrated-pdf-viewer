@@ -17,16 +17,17 @@ class DocumentPickerViewModel: ObservableObject {
         loadRecentPDFFiles()
     }
 
-    func selectPDF() {
-        DocumentPickerController.shared.presentDocumentPicker { [weak self] urls in
-            guard let self = self else { return }
-            if let selectedURL = urls.first {
-                titlePrint(from: selectedURL)
-                self.loadPDF(from: selectedURL)
-                self.loadRecentPDFFiles() // Refresh the list of recent PDF files
-            }
-        }
-    }
+//    func selectPDF() {
+//        DocumentPickerController.shared.presentDocumentPicker { [weak self] urls in
+//            guard let self = self else { return }
+//            if let selectedURL = urls.first {
+//                titlePrint(from: selectedURL)
+//                self.loadPDF(from: selectedURL)
+//                self.loadRecentPDFFiles() // Refresh the list of recent PDF files
+//            }
+//        }
+//    }
+
 
     func loadRecentPDFFiles() {
         let documentsDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]

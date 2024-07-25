@@ -58,5 +58,15 @@ class PDFViewModel: ObservableObject {
         }
     }
     
+<<<<<<< HEAD
+    func updatePageNumber(for pdfDetail: PDFDetails, pageNumber: Int) {
+//            if let index = recentPDFs.firstIndex(where: { $0.id == pdfDetail.id }) {
+//                recentPDFs[index].pageNumber = pageNumber
+//                saveRecentPDFs()
+//            }
+        print(pageNumber)
+        }
+=======
+>>>>>>> main
 }
 
