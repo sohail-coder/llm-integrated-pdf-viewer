@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC7C263A2C52F936003CA78D /* PDFInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C26392C52F936003CA78D /* PDFInfo.swift */; };
 		CCA15ED22C46072800D4E29F /* smart_pdf_viewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15ED12C46072800D4E29F /* smart_pdf_viewerApp.swift */; };
 		CCA15ED42C46072800D4E29F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15ED32C46072800D4E29F /* ContentView.swift */; };
 		CCA15ED62C46072A00D4E29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA15ED52C46072A00D4E29F /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC7C26392C52F936003CA78D /* PDFInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFInfo.swift; sourceTree = "<group>"; };
 		CCA15ECE2C46072800D4E29F /* smart pdf viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart pdf viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA15ED12C46072800D4E29F /* smart_pdf_viewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smart_pdf_viewerApp.swift; sourceTree = "<group>"; };
 		CCA15ED32C46072800D4E29F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				CCA15EDF2C4607CB00D4E29F /* DocumentPickerViewModel.swift */,
 				CCA15EE12C4607FD00D4E29F /* DocumentPickerController.swift */,
 				CCA15EE72C460A8100D4E29F /* PDFModel.swift */,
+				CC7C26392C52F936003CA78D /* PDFInfo.swift */,
 			);
 			path = "smart pdf viewer";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				CCA15EEA2C460AC200D4E29F /* PDFKitRepresentedView.swift in Sources */,
 				CCA15EEE2C48D1C400D4E29F /* PDFDetailView.swift in Sources */,
 				CCA15EE82C460A8100D4E29F /* PDFModel.swift in Sources */,
+				CC7C263A2C52F936003CA78D /* PDFInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
