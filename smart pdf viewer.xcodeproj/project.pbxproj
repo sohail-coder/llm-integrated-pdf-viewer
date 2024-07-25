@@ -17,7 +17,6 @@
 		CCA15EEA2C460AC200D4E29F /* PDFKitRepresentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15EE92C460AC200D4E29F /* PDFKitRepresentedView.swift */; };
 		CCA15EEC2C460AD700D4E29F /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15EEB2C460AD700D4E29F /* PDFViewModel.swift */; };
 		CCA15EEE2C48D1C400D4E29F /* PDFDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15EED2C48D1C400D4E29F /* PDFDetailView.swift */; };
-		CCA15EF22C52246A00D4E29F /* PdfDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15EF12C52246A00D4E29F /* PdfDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		CCA15EE92C460AC200D4E29F /* PDFKitRepresentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitRepresentedView.swift; sourceTree = "<group>"; };
 		CCA15EEB2C460AD700D4E29F /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
 		CCA15EED2C48D1C400D4E29F /* PDFDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetailView.swift; sourceTree = "<group>"; };
-		CCA15EF12C52246A00D4E29F /* PdfDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 				CCA15EDF2C4607CB00D4E29F /* DocumentPickerViewModel.swift */,
 				CCA15EE12C4607FD00D4E29F /* DocumentPickerController.swift */,
 				CCA15EE72C460A8100D4E29F /* PDFModel.swift */,
-				CCA15EF12C52246A00D4E29F /* PdfDetails.swift */,
 			);
 			path = "smart pdf viewer";
 			sourceTree = "<group>";
@@ -158,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCA15EF22C52246A00D4E29F /* PdfDetails.swift in Sources */,
 				CCA15EEC2C460AD700D4E29F /* PDFViewModel.swift in Sources */,
 				CCA15ED42C46072800D4E29F /* ContentView.swift in Sources */,
 				CCA15ED22C46072800D4E29F /* smart_pdf_viewerApp.swift in Sources */,

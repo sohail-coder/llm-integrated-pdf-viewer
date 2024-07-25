@@ -1,29 +1,3 @@
-
-//import SwiftUI
-//import PDFKit
-//import UniformTypeIdentifiers
-//
-//class PDFViewModel: ObservableObject {
-//    @Published var pdfDocument: PDFDocument?
-//    @Published var showingDocumentPicker = false
-//    @Published var documentTitle: String = "Document"
-//
-//    func handleFileImport(result: Result<[URL], Error>) {
-//        switch result {
-//        case .success(let urls):
-//            if let url = urls.first {
-//                pdfDocument = PDFDocument(url: url)
-//                
-//                documentTitle =   URL(fileURLWithPath: url.lastPathComponent).deletingPathExtension().lastPathComponent // Set documentTile to file name
-//            }
-//        case .failure(let error):
-//            print("Failed to import file: \(error.localizedDescription)")
-//        }
-//    }
-//}
-
-//above working----------------------------------------------------------------------------------------------------------------------------
-
 import PDFKit
 import SwiftUI
 import UniformTypeIdentifiers

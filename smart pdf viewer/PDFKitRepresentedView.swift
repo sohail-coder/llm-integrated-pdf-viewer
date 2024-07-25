@@ -9,7 +9,6 @@ struct PDFKitRepresentedView: UIViewRepresentable {
         let pdfView = PDFView()
         pdfView.document = pdfDocument
         pdfView.autoScales = true  // Disable auto scaling
-//        pdfView.scaleFactor = pdfView.scaleFactorForSizeToFit  // Set initial scale factor to fit width
         return pdfView
     }
 

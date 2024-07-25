@@ -1,38 +1,3 @@
-//import SwiftUI
-//import PDFKit
-//
-//struct PDFDetailView: View {
-//    @ObservedObject var pdfViewModel: PDFViewModel  // Observe changes in PDFViewModel
-//
-//    private var documentTitle: String {
-//        let title = pdfViewModel.documentTitle
-//        return title.count > 10 ? String(title.prefix(10)) + "..." : title
-//    }
-//
-//    var body: some View {
-//        NavigationStack {
-//            PDFKitRepresentedView(pdfDocument: pdfViewModel.pdfDocument!)
-//                .navigationBarTitle(documentTitle, displayMode: .inline)
-//                .toolbar {
-//                            ToolbarItem(placement: .topBarTrailing) {
-//                                Button {
-//                                    print("Pressed")
-//                                } label: {
-//                                    Image(systemName: "doc.text.magnifyingglass")
-//
-//                                }
-//
-//                            }
-//                        }
-//                .edgesIgnoringSafeArea(.all)
-//        }
-//
-//
-//    }
-//}
-
-//---above working
-
 import SwiftUI
 import PDFKit
 
