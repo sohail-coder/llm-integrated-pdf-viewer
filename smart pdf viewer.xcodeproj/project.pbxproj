@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CC7C263A2C52F936003CA78D /* PDFInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C26392C52F936003CA78D /* PDFInfo.swift */; };
+		CC7C26422C5315EE003CA78D /* CurrentPDFInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C26412C5315EE003CA78D /* CurrentPDFInfoStore.swift */; };
+		CC7C26472C58178C003CA78D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C26462C58178C003CA78D /* WelcomeView.swift */; };
+		CC7C26492C5817B1003CA78D /* SkipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C26482C5817B1003CA78D /* SkipView.swift */; };
+		CC7C264B2C5817EA003CA78D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C264A2C5817EA003CA78D /* SignInView.swift */; };
+		CC7C264E2C58186C003CA78D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C264D2C58186C003CA78D /* GoogleSignIn */; };
+		CC7C26502C58186C003CA78D /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C264F2C58186C003CA78D /* GoogleSignInSwift */; };
+		CC7C26532C5818C1003CA78D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C26522C5818C1003CA78D /* FirebaseAuth */; };
+		CC7C26552C5818C1003CA78D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C26542C5818C1003CA78D /* FirebaseDatabase */; };
+		CC7C26572C5818C1003CA78D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C26562C5818C1003CA78D /* FirebaseFirestore */; };
+		CC7C26592C5818C1003CA78D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C26582C5818C1003CA78D /* FirebaseStorage */; };
+		CC7C26602C58496C003CA78D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7C265F2C58496C003CA78D /* GoogleService-Info.plist */; };
+		CC7C26632C58C5D6003CA78D /* PlaywriteDKLoopet-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC7C26622C58C5BC003CA78D /* PlaywriteDKLoopet-Regular.ttf */; };
+		CC7C26662C58D1E9003CA78D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C26652C58D1E9003CA78D /* AuthViewModel.swift */; };
 		CCA15ED22C46072800D4E29F /* smart_pdf_viewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15ED12C46072800D4E29F /* smart_pdf_viewerApp.swift */; };
 		CCA15ED42C46072800D4E29F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15ED32C46072800D4E29F /* ContentView.swift */; };
 		CCA15ED62C46072A00D4E29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA15ED52C46072A00D4E29F /* Assets.xcassets */; };
@@ -22,6 +35,14 @@
 
 /* Begin PBXFileReference section */
 		CC7C26392C52F936003CA78D /* PDFInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFInfo.swift; sourceTree = "<group>"; };
+		CC7C26412C5315EE003CA78D /* CurrentPDFInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPDFInfoStore.swift; sourceTree = "<group>"; };
+		CC7C26462C58178C003CA78D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		CC7C26482C5817B1003CA78D /* SkipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipView.swift; sourceTree = "<group>"; };
+		CC7C264A2C5817EA003CA78D /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		CC7C265C2C5845F9003CA78D /* smart-pdf-viewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "smart-pdf-viewer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CC7C265F2C58496C003CA78D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC7C26622C58C5BC003CA78D /* PlaywriteDKLoopet-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlaywriteDKLoopet-Regular.ttf"; sourceTree = "<group>"; };
+		CC7C26652C58D1E9003CA78D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		CCA15ECE2C46072800D4E29F /* smart pdf viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart pdf viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA15ED12C46072800D4E29F /* smart_pdf_viewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smart_pdf_viewerApp.swift; sourceTree = "<group>"; };
 		CCA15ED32C46072800D4E29F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,12 +61,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7C264E2C58186C003CA78D /* GoogleSignIn in Frameworks */,
+				CC7C26532C5818C1003CA78D /* FirebaseAuth in Frameworks */,
+				CC7C26552C5818C1003CA78D /* FirebaseDatabase in Frameworks */,
+				CC7C26572C5818C1003CA78D /* FirebaseFirestore in Frameworks */,
+				CC7C26502C58186C003CA78D /* GoogleSignInSwift in Frameworks */,
+				CC7C26592C5818C1003CA78D /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC7C26432C58174A003CA78D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C26462C58178C003CA78D /* WelcomeView.swift */,
+				CC7C26482C5817B1003CA78D /* SkipView.swift */,
+				CC7C264A2C5817EA003CA78D /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC7C26612C58C57E003CA78D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C26622C58C5BC003CA78D /* PlaywriteDKLoopet-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		CC7C26642C58D1DC003CA78D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C26652C58D1E9003CA78D /* AuthViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CCA15EC52C46072800D4E29F = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +118,10 @@
 		CCA15ED02C46072800D4E29F /* smart pdf viewer */ = {
 			isa = PBXGroup;
 			children = (
+				CC7C26642C58D1DC003CA78D /* Models */,
+				CC7C26612C58C57E003CA78D /* fonts */,
+				CC7C265C2C5845F9003CA78D /* smart-pdf-viewer-Info.plist */,
+				CC7C26432C58174A003CA78D /* Views */,
 				CCA15EED2C48D1C400D4E29F /* PDFDetailView.swift */,
 				CCA15EEB2C460AD700D4E29F /* PDFViewModel.swift */,
 				CCA15EE92C460AC200D4E29F /* PDFKitRepresentedView.swift */,
@@ -76,6 +133,8 @@
 				CCA15EE12C4607FD00D4E29F /* DocumentPickerController.swift */,
 				CCA15EE72C460A8100D4E29F /* PDFModel.swift */,
 				CC7C26392C52F936003CA78D /* PDFInfo.swift */,
+				CC7C26412C5315EE003CA78D /* CurrentPDFInfoStore.swift */,
+				CC7C265F2C58496C003CA78D /* GoogleService-Info.plist */,
 			);
 			path = "smart pdf viewer";
 			sourceTree = "<group>";
@@ -104,6 +163,14 @@
 			dependencies = (
 			);
 			name = "smart pdf viewer";
+			packageProductDependencies = (
+				CC7C264D2C58186C003CA78D /* GoogleSignIn */,
+				CC7C264F2C58186C003CA78D /* GoogleSignInSwift */,
+				CC7C26522C5818C1003CA78D /* FirebaseAuth */,
+				CC7C26542C5818C1003CA78D /* FirebaseDatabase */,
+				CC7C26562C5818C1003CA78D /* FirebaseFirestore */,
+				CC7C26582C5818C1003CA78D /* FirebaseStorage */,
+			);
 			productName = "smart pdf viewer";
 			productReference = CCA15ECE2C46072800D4E29F /* smart pdf viewer.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +199,10 @@
 				Base,
 			);
 			mainGroup = CCA15EC52C46072800D4E29F;
+			packageReferences = (
+				CC7C264C2C58186C003CA78D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				CC7C26512C5818C0003CA78D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CCA15ECF2C46072800D4E29F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,7 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA15ED92C46072A00D4E29F /* Preview Assets.xcassets in Resources */,
+				CC7C26602C58496C003CA78D /* GoogleService-Info.plist in Resources */,
 				CCA15ED62C46072A00D4E29F /* Assets.xcassets in Resources */,
+				CC7C26632C58C5D6003CA78D /* PlaywriteDKLoopet-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,11 +235,16 @@
 				CCA15ED42C46072800D4E29F /* ContentView.swift in Sources */,
 				CCA15ED22C46072800D4E29F /* smart_pdf_viewerApp.swift in Sources */,
 				CCA15EE22C4607FD00D4E29F /* DocumentPickerController.swift in Sources */,
+				CC7C26422C5315EE003CA78D /* CurrentPDFInfoStore.swift in Sources */,
 				CCA15EE02C4607CB00D4E29F /* DocumentPickerViewModel.swift in Sources */,
+				CC7C26472C58178C003CA78D /* WelcomeView.swift in Sources */,
 				CCA15EEA2C460AC200D4E29F /* PDFKitRepresentedView.swift in Sources */,
 				CCA15EEE2C48D1C400D4E29F /* PDFDetailView.swift in Sources */,
 				CCA15EE82C460A8100D4E29F /* PDFModel.swift in Sources */,
+				CC7C26662C58D1E9003CA78D /* AuthViewModel.swift in Sources */,
 				CC7C263A2C52F936003CA78D /* PDFInfo.swift in Sources */,
+				CC7C26492C5817B1003CA78D /* SkipView.swift in Sources */,
+				CC7C264B2C5817EA003CA78D /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +378,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"smart pdf viewer/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JN62C2286;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "smart-pdf-viewer-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,8 +408,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"smart pdf viewer/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JN62C2286;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "smart-pdf-viewer-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -370,6 +452,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC7C264C2C58186C003CA78D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		CC7C26512C5818C0003CA78D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC7C264D2C58186C003CA78D /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7C264C2C58186C003CA78D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		CC7C264F2C58186C003CA78D /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7C264C2C58186C003CA78D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		CC7C26522C5818C1003CA78D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7C26512C5818C0003CA78D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CC7C26542C5818C1003CA78D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7C26512C5818C0003CA78D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		CC7C26562C5818C1003CA78D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7C26512C5818C0003CA78D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CC7C26582C5818C1003CA78D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7C26512C5818C0003CA78D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCA15EC62C46072800D4E29F /* Project object */;
 }

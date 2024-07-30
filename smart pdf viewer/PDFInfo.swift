@@ -12,7 +12,7 @@ struct PDFInfo: Codable {
     let id: String
     let title: String
     let url: String
-    let recentPageNumber: Int
+    var recentPageNumber: Int
     
     init(id: String = UUID().uuidString, title: String, url: String, recentPageNumber: Int = 1) {
         self.id = id

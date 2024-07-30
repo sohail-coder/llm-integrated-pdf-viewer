@@ -5,30 +5,64 @@
 //  Created by sohail shaik on 7/15/24.
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
+import GoogleSignIn
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+      GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                  if let error = error {
+                      print("Failed to restore previous sign-in: \(error)")
+                  } else if let user = user {
+                      print("Successfully restored sign-in for user: \(user)")
+                  }
+              }
+              return true
+  }
+    func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+      return GIDSignIn.sharedInstance.handle(url)
+    }
+}
+
 
 @main
 struct Smart_PDF_ViewerApp: App {
+    @StateObject private var authViewModel = AuthViewModel()
+    
+    
     @Environment(\.scenePhase) private var scenePhase
     @StateObject private var pdfViewModel = PDFViewModel()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     init() {
         configureNavigationBarAppearance()
         createDataJSONIfNeeded()
 
     }
 
-//    @StateObject private var viewModel = DocumentPickerViewModel()
-
     var body: some Scene {
+        
             WindowGroup {
-                ContentView(viewModel: pdfViewModel)
+//                ContentView(viewModel: pdfViewModel)
+                if authViewModel.isSignedIn {
+                                ContentView(viewModel: pdfViewModel)
+                                    .environmentObject(authViewModel)
+                            } else {
+                                SignInView()
+                                    .environmentObject(authViewModel)
+                            }
             }
             .onChange(of: scenePhase) {
                 switch scenePhase {
-                case .background:
+                case .background, .inactive:
                     print("Background")
                     pdfViewModel.saveDocument()
-                case .inactive:
-                    print("Inactive")
+                    pdfViewModel.updatePdfInfo()
+                
                 case .active:
                     print("Active")
                     if let data = pdfViewModel.savedDocumentData {

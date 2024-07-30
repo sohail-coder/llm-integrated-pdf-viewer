@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PlaywriteDKLoopet-Regular.ttf</string>
+	</array>
+	<key>GIDClientID</key>
+	<string>24573857606-2fg8u5259uc1httopjq8h5pt92eqva12.apps.googleusercontent.com</string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.24573857606-2fg8u5259uc1httopjq8h5pt92eqva12</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
