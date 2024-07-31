@@ -69,9 +69,9 @@ struct SignInView: View {
 //        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 //        
 //        let config = GIDConfiguration(clientID: clientID)
-        
+        let additionalScopes = ["https://www.googleapis.com/auth/drive.file"]
         // Correct usage of Google Sign-In with SwiftUI
-        GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { user, error in
+        GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController(), hint: nil, additionalScopes: additionalScopes) { user, error in
             if let error = error {
                 print("Error signing in with Google: \(error.localizedDescription)")
                 return
