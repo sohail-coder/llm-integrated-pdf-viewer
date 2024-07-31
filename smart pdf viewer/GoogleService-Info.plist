@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>24573857606-2fg8u5259uc1httopjq8h5pt92eqva12.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.24573857606-2fg8u5259uc1httopjq8h5pt92eqva12</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBdH3kAwV2RDcJ1dqMOh3E59ZnF999bY3E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>24573857606</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sohail.smart-pdf-viewer</string>
+	<key>PROJECT_ID</key>
+	<string>llm-integrated-pdf-viewe-714d2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>llm-integrated-pdf-viewe-714d2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:24573857606:ios:1127a9c32b62d598575f47</string>
+</dict>
+</plist>

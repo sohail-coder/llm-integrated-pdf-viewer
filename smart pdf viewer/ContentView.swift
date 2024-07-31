@@ -4,7 +4,9 @@ import PDFKit
 struct ContentView: View {
     @ObservedObject var viewModel: PDFViewModel
     @State private var shouldNavigate = false
-
+    @StateObject var currentInfo = CurrentPDFInfoStore()
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
         NavigationStack {
             List {
@@ -39,11 +41,20 @@ struct ContentView: View {
                 
             }
             .navigationBarTitle("PDF Viewer", displayMode: .inline)
-            .navigationBarItems(trailing: viewModel.recentPDFFiles.isEmpty ? nil : Button(action: {
-                            viewModel.showingDocumentPicker.toggle()
-                        }) {
-                            Image(systemName: "doc.badge.plus")
-                        })
+            .navigationBarItems(
+                leading: Button(action: {
+                    // Action for the exit button
+                    authViewModel.signOut()
+                }) {
+                    Image(systemName: "rectangle.portrait.and.arrow.forward")
+                },
+                trailing: viewModel.recentPDFFiles.isEmpty ? nil : Button(action: {
+                    viewModel.showingDocumentPicker.toggle()
+                }) {
+                    Image(systemName: "doc.badge.plus")
+                }
+            )
+
             .fileImporter(
                 isPresented: $viewModel.showingDocumentPicker,
                 allowedContentTypes: [.pdf],
@@ -59,6 +70,7 @@ struct ContentView: View {
                     PDFDetailView(pdfViewModel: viewModel)
                 }
         }
+        .environmentObject(currentInfo)
     }
 }
 
