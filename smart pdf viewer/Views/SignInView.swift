@@ -3,7 +3,7 @@ import Firebase
 import GoogleSignIn
 
 enum NavigationDestination: Hashable {
-    case welcome
+//    case welcome
     case skipped
 }
 
@@ -56,8 +56,8 @@ struct SignInView: View {
          
             .navigationDestination(for: NavigationDestination.self) { destination in
                 switch destination {
-                case .welcome:
-                    WelcomeView()
+//                case .welcome:
+//                    WelcomeView()
                 case .skipped:
                     SkipView()
                 }
@@ -92,7 +92,7 @@ struct SignInView: View {
                 
                 // User is signed in with Firebase
                 print("Successfully signed in with Firebase: \(String(describing: authResult?.user))")
-                navigationPath.append(NavigationDestination.welcome)
+//                navigationPath.append(NavigationDestination.welcome)
             }
         }
         

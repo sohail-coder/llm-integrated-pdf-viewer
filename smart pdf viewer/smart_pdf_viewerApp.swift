@@ -47,7 +47,6 @@ struct Smart_PDF_ViewerApp: App {
     var body: some Scene {
         
             WindowGroup {
-//                ContentView(viewModel: pdfViewModel)
                 if authViewModel.isSignedIn {
                                 ContentView(viewModel: pdfViewModel)
                                     .environmentObject(authViewModel)
@@ -60,8 +59,9 @@ struct Smart_PDF_ViewerApp: App {
                 switch scenePhase {
                 case .background, .inactive:
                     print("Background")
-                    pdfViewModel.saveDocument()
+//                    pdfViewModel.saveDocument()
                     pdfViewModel.updatePdfInfo()
+                    break
                 
                 case .active:
                     print("Active")

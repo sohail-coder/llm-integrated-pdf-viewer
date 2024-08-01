@@ -21,6 +21,7 @@
 		CC7C26602C58496C003CA78D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7C265F2C58496C003CA78D /* GoogleService-Info.plist */; };
 		CC7C26632C58C5D6003CA78D /* PlaywriteDKLoopet-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC7C26622C58C5BC003CA78D /* PlaywriteDKLoopet-Regular.ttf */; };
 		CC7C26662C58D1E9003CA78D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C26652C58D1E9003CA78D /* AuthViewModel.swift */; };
+		CC7C26682C5AEDFB003CA78D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C26672C5AEDFB003CA78D /* FirebaseAnalytics */; };
 		CCA15ED22C46072800D4E29F /* smart_pdf_viewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15ED12C46072800D4E29F /* smart_pdf_viewerApp.swift */; };
 		CCA15ED42C46072800D4E29F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA15ED32C46072800D4E29F /* ContentView.swift */; };
 		CCA15ED62C46072A00D4E29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA15ED52C46072A00D4E29F /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7C26682C5AEDFB003CA78D /* FirebaseAnalytics in Frameworks */,
 				CC7C264E2C58186C003CA78D /* GoogleSignIn in Frameworks */,
 				CC7C26532C5818C1003CA78D /* FirebaseAuth in Frameworks */,
 				CC7C26552C5818C1003CA78D /* FirebaseDatabase in Frameworks */,
@@ -170,6 +172,7 @@
 				CC7C26542C5818C1003CA78D /* FirebaseDatabase */,
 				CC7C26562C5818C1003CA78D /* FirebaseFirestore */,
 				CC7C26582C5818C1003CA78D /* FirebaseStorage */,
+				CC7C26672C5AEDFB003CA78D /* FirebaseAnalytics */,
 			);
 			productName = "smart pdf viewer";
 			productReference = CCA15ECE2C46072800D4E29F /* smart pdf viewer.app */;
@@ -502,6 +505,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC7C26512C5818C0003CA78D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		CC7C26672C5AEDFB003CA78D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
